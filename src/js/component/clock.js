@@ -18,7 +18,7 @@ const printCounter = number => {
 	return countArr;
 };
 
-export const Counter = props => {
+export const Clock = props => {
 	const x = printCounter(props.digits);
 	return (
 		<div className="container">
@@ -36,6 +36,6 @@ export const Counter = props => {
 		</div>
 	);
 };
-Counter.propTypes = {
+Clock.propTypes = {
 	digits: PropTypes.number
 };

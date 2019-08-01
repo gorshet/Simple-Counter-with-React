@@ -9,13 +9,10 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Counter } from "./component/counter.js";
+import { Clock } from "./component/clock.js";
 let counter = 0;
 setInterval(() => {
-	ReactDOM.render(
-		<Counter digits={counter} />,
-		document.querySelector("#app")
-	);
+	ReactDOM.render(<Clock digits={counter} />, document.querySelector("#app"));
 	counter++;
 }, 1000);
 //render your react application
